@@ -4,7 +4,7 @@ var http = require('http');
 
 var app = express();
 
-var server = http.createServer(app).listen(6900);
+var server = http.createServer(app).listen(9000);
 
 var io = require('socket.io')(server);
 
@@ -19,4 +19,4 @@ io.on('connection', function(socket){
     socket.emit('message', 'Socket.io initialized');
 });
 
-console.log('Server listening to port 6900');
+console.log('Server listening to port 9000');

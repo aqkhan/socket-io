@@ -1,6 +1,6 @@
 // This is client side ws controller
 
-var socket = io('http://localhost:6900');
+var socket = io('http://localhost:9000');
 
 socket.on('disconnect', function () {
     updateTitle('Disconnected');
