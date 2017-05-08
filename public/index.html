@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Websockets Messaging</title>
+        <style>
+            body{
+                background-color: #000;
+                padding: 20px;
+            }
+            h1, h2, p{
+                color: #fff;
+            }
+            input{
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Websockets Messaging App</h1>
+        <h2>Connection Status</h2>
+        <input type="text" id="msg" name="message" onkeypress="myKeyPress(event)">
+        <div id="messages"></div>
+    </body>
+    <script src="socket.io.min.js"></script>
+    <script src="ws-client.js"></script>
+</html>
