@@ -1,6 +1,6 @@
 // This is client side ws controller
 
-var socket = io('http://localhost:9000');
+var socket = io('http://ec2-35-165-180-185.us-west-2.compute.amazonaws.com:9000');
 
 socket.on('disconnect', function () {
     updateTitle('Disconnected');
